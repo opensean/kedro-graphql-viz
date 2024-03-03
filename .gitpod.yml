@@ -1,0 +1,14 @@
+tasks:
+  - name: bit setup
+    init: |
+      npx --yes @teambit/bvm install
+      ## install workspace dependencies
+      bit install
+      ## Import components from their remote scopes to the local workspace
+      bit import
+      gp sync-done bundle
+    command: bit start
+
+  - name: bit watch
+    init: gp sync-await bundle # wait for the above 'init' to finish
+    command: bit watch
