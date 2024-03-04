@@ -8,7 +8,14 @@ tasks:
       bit import
       gp sync-done bundle
     command: bit start
+    openMode: split-right
 
   - name: bit watch
     init: gp sync-await bundle # wait for the above 'init' to finish
     command: bit watch
+    openMode: split-right
+
+  - name: start services
+    command: docker-compose up
+    openMode: split-right
+
