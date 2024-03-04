@@ -6,7 +6,8 @@ import { VueEnv } from '@bitdev/vue.vue-env';
 
 import { TypescriptConfigWriter } from '@teambit/typescript.typescript-compiler';
 import { ESLintLinter, EslintTask, EslintConfigWriter } from '@teambit/defender.eslint-linter';
-import { JestTask, JestTester } from '@teambit/defender.jest-tester';
+import { VitestTask, VitestTester } from '@teambit/vite.vitest-tester';
+//import { JestTask, JestTester } from '@teambit/defender.jest-tester';
 import { PrettierFormatter, PrettierConfigWriter } from '@teambit/defender.prettier-formatter';
 import { Pipeline } from '@teambit/builder';
 import { ConfigWriterList } from '@teambit/workspace-config-files';
@@ -37,9 +38,14 @@ export class MyVueEnv extends VueEnv {
     /**
      * @see https://bit.dev/reference/jest/using-jest
      */
-    return JestTester.from({
-      jest: require.resolve('jest'),
-      config: require.resolve('./config/jest.config'),
+    //return JestTester.from({
+    //  jest: require.resolve('jest'),
+    //  config: require.resolve('./config/jest.config'),
+    //});
+    return VitestTester.from({
+
+      config: require.resolve('./config/vitest.config.js')
+
     });
   }
 
@@ -104,10 +110,15 @@ export class MyVueEnv extends VueEnv {
         pluginsPath: __dirname,
         extensions: ['.ts', '.js', '.mjs', '.vue'],
       }),
-      JestTask.from({
-        jest: require.resolve('jest'),
-        config: require.resolve('./config/jest.config'),
-      }),
+      //JestTask.from({
+      //  jest: require.resolve('jest'),
+      //  config: require.resolve('./config/jest.config'),
+      //}),
+      VitestTask.from({
+
+        config: require.resolve('./config/vitest.config.js'),
+
+      })
     ]);
   }
 

@@ -1,9 +1,16 @@
 import { App } from 'vue';
 import { createMounter } from '@bitdev/vue.dev-services.preview.vue-mounter';
 
+import { createVuetify } from 'vuetify';
+import 'vuetify/styles';
+import '@mdi/font/css/materialdesignicons.css';
+import * as components from 'vuetify/components';
+import * as directives from 'vuetify/directives';
+
 /**
  * Customize a wrapper component for your component compositions (preview).
  */
+
 import Wrapper from '@labmesh/kedro-graphql-viz.envs.my-vue-wrapper';
 
 /**
@@ -12,7 +19,14 @@ import Wrapper from '@labmesh/kedro-graphql-viz.envs.my-vue-wrapper';
  * @see https://vuejs.org/api/application.html
  */
 const initApp = (app: App<Element>) => {
-  app.provide('message', 'hello')
+  const vuetify = createVuetify({
+
+    components,
+
+    directives,
+
+  });
+  app.use(vuetify);
 };
 
 /**
