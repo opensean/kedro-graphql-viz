@@ -2,12 +2,12 @@ tasks:
   - name: bit setup
     init: |
       npx --yes @teambit/bvm install
+      echo "export PATH=$HOME/bin:$PATH" >> ~/.bashrc
+      echo "export PATH="$PATH:$HOME/.rvm/bin" >> ~/.bashrc
       ## install workspace dependencies
       bit install
       ## Import components from their remote scopes to the local workspace
       bit import
-      echo "export PATH=$HOME/bin:$PATH" >> ~/.bashrc
-      echo "export PATH="$PATH:$HOME/.rvm/bin" >> ~/.bashrc
       gp sync-done bundle
     command: bit start
     openMode: split-right
