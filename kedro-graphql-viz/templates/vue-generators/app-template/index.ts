@@ -1,0 +1,1 @@
+export { VueAppTemplate } from './template';

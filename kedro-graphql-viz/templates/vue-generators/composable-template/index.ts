@@ -1,0 +1,1 @@
+export { VueComposableCodegenTemplate } from './template';

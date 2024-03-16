@@ -1,0 +1,1 @@
+export { VueEnvTemplate } from './template';

@@ -1,0 +1,2 @@
+export type { VueEnvInterface } from '@bitdev/vue.vue-env';
+export { COMP_NAME_PASCAL_CASE } from './COMP_NAME.bit-env';

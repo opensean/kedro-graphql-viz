@@ -1,0 +1,38 @@
+---
+labels: ['module', 'vue', 'generator', 'templates']
+description: 'A module to generate templates for Vue components and Vue composables.'
+---
+
+A module to generate templates for Vue like:
+
+- Vue components
+- Vue composables
+- Vue apps
+- custom Vue envs
+
+Usually, it's used in the Vue development environment.
+
+## API
+
+```ts
+import {
+  VueComponentTemplate,
+  VueComposableTemplate,
+  VueAppTemplate,
+  VueEnvTemplate
+ } from '@bitdev/vue.templates.vue-generators';
+
+const vueTemplate = VueComponentTemplate.from({
+  name: 'vue',
+  description: 'a vue component template',
+  hidden: false,
+});
+
+const vueComposableTemplate = VueComponentTemplate.from({
+  name: 'vue-composable',
+  description: 'a vue composable template',
+  hidden: false,
+});
+
+// ...
+```

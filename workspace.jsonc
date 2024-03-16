@@ -60,13 +60,19 @@
         "@bitdev/vue.dev-services.preview.vue-preview": "0.0.6",
         "@bitdev/vue.dev-services.tester.vue-jest-config": "0.0.5",
         "@bitdev/vue.envs.vue-env": "0.0.12",
-        "@bitdev/vue.vue-env": "0.0.11",
+        "@bitdev/vue.vue-env": "^0.0.11",
         "@teambit/defender.eslint-linter": "1.0.8",
         "@teambit/defender.jest-tester": "1.0.5",
         "@teambit/defender.prettier-formatter": "1.0.2",
         "@teambit/dependencies.modules.packages-excluder": "1.0.4",
         "@teambit/envs.docs.env-overview-template": "0.0.2",
-        "@teambit/typescript.typescript-compiler": "2.0.7"
+        "@teambit/node.node": "^1.0.16",
+        "@teambit/typescript.typescript-compiler": "2.0.7",
+        "@vue/test-utils": "^2.4.4",
+        "happy-dom": "^13.8.6",
+        "resize-observer-polyfill": "^1.5.1",
+        "vitest": "^1.4.0",
+        "vuetify": "^3.5.9"
       },
       "peerDependencies": {}
     },
@@ -78,7 +84,7 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "labmesh.kedro-graphql-viz/envs/my-vue-env"
+      "labmesh.kedro-graphql-viz/envs/vuetify-vue-env"
     ]
   }
 }

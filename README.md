@@ -1,3 +1,5 @@
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/opensean/kedro-graphql-viz)
+
 # Welcome to your Bit Workspace
   
 This is an empty workspace to author your [Vue](https://vuejs.org/) components.
