@@ -9,36 +9,42 @@
  */
 
 {
-    "envs/my-vue-env": {
-        "name": "envs/my-vue-env",
+    "envs/vuetify-vue-env": {
+        "name": "envs/vuetify-vue-env",
         "scope": "",
         "version": "",
         "defaultScope": "labmesh.kedro-graphql-viz",
         "mainFile": "index.ts",
-        "rootDir": "kedro-graphql-viz/envs/my-vue-env",
+        "rootDir": "kedro-graphql-viz/envs/vuetify-vue-env",
+        "config": {
+            "teambit.envs/envs": {
+                "env": "teambit.envs/env"
+            }
+        }
+    },
+    "templates/vue-generators": {
+        "name": "templates/vue-generators",
+        "scope": "",
+        "version": "",
+        "defaultScope": "labmesh.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/templates/vue-generators",
         "config": {
             "teambit.dependencies/dependency-resolver": {
                 "policy": {
-                    "dependencies": {
-                        "jest": "29.7.0",
-                        "less": "^4.2.0",
-                        "@bitdev/vue.envs.vue-env": "0.0.6",
-                        "@babel/runtime": "7.23.6",
-                        "core-js": "^3.34.0"
-                    },
                     "devDependencies": {
                         "@types/jest": "29.5.11",
-                        "@types/node": "20.10.4",
-                        "@types/react": "^18.2.45",
-                        "@types/react-dom": "^18.2.17",
-                        "@types/testing-library__jest-dom": "5.14.9"
+                        "@types/node": "20.10.4"
+                    },
+                    "dependencies": {
+                        "@babel/runtime": "7.23.6"
                     }
                 }
             },
+            "teambit.node/node@1.0.16": {},
             "teambit.envs/envs": {
-                "env": "teambit.envs/env"
+                "env": "teambit.node/node"
             },
-            "teambit.envs/env": {},
             "teambit.harmony/application": {},
             "teambit.component/dev-files": {},
             "teambit.compositions/compositions": {},
@@ -48,37 +54,10 @@
             "teambit.component/forking": {
                 "forkedFrom": {
                     "scope": "bitdev.vue",
-                    "name": "examples/my-vue-env",
-                    "version": "0.0.12"
+                    "name": "templates/vue-generators",
+                    "version": "0.0.7"
                 }
             }
-        }
-    },
-    "envs/my-vue-wrapper": {
-        "name": "envs/my-vue-wrapper",
-        "scope": "",
-        "version": "",
-        "defaultScope": "labmesh.kedro-graphql-viz",
-        "mainFile": "index.ts",
-        "rootDir": "kedro-graphql-viz/envs/my-vue-wrapper",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "bitdev.vue/vue-env"
-            },
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "bitdev.vue",
-                    "name": "examples/my-vue-wrapper",
-                    "version": "0.0.11"
-                }
-            },
-            "bitdev.vue/vue-env@0.0.11": {}
         }
     },
     "$schema-version": "17.0.0"

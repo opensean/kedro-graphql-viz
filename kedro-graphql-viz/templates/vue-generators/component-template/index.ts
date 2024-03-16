@@ -1,0 +1,1 @@
+export { VueComponentTemplate } from './template';
