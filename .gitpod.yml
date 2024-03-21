@@ -5,6 +5,9 @@ tasks:
       echo "export PATH=$HOME/bin:$PATH" >> ~/.bashrc
       echo "export PATH=$PATH:$HOME/.rvm/bin" >> ~/.bashrc
       source ~/.bashrc
+      export PATH=$HOME/bin:$PATH
+      export PATH=$PATH:$HOME/.rvm/bin
+
       ## install workspace dependencies
       bit install
       ## Import components from their remote scopes to the local workspace
