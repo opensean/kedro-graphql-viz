@@ -1,0 +1,27 @@
+query UsePipelines($limit: Int!, $filter: [String!], $cursor: String) {
+  pipelines(limit: $limit, cursor:$cursor, filter: $filter) {
+    pageMeta {
+      nextCursor
+      count
+    }
+    pipelines {
+      id
+      name
+      status
+      parameters {
+        name
+        type
+        value
+      }
+      dataCatalog {
+        name
+        config
+      }
+      tags {
+        key
+        value
+      }
+    }
+  }
+}
+      

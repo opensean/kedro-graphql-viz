@@ -9,6 +9,20 @@
  */
 
 {
+    "composables/use-pipelines": {
+        "name": "composables/use-pipelines",
+        "scope": "",
+        "version": "",
+        "defaultScope": "labmesh.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/composables/use-pipelines",
+        "config": {
+            "labmesh.kedro-graphql-viz/envs/vuetify-vue-env": {},
+            "teambit.envs/envs": {
+                "env": "labmesh.kedro-graphql-viz/envs/vuetify-vue-env"
+            }
+        }
+    },
     "envs/vuetify-vue-env": {
         "name": "envs/vuetify-vue-env",
         "scope": "",
@@ -57,6 +71,20 @@
                     "name": "templates/vue-generators",
                     "version": "0.0.7"
                 }
+            }
+        }
+    },
+    "ui/pipelines-data-table": {
+        "name": "ui/pipelines-data-table",
+        "scope": "",
+        "version": "",
+        "defaultScope": "labmesh.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/ui/pipelines-data-table",
+        "config": {
+            "labmesh.kedro-graphql-viz/envs/vuetify-vue-env": {},
+            "teambit.envs/envs": {
+                "env": "labmesh.kedro-graphql-viz/envs/vuetify-vue-env"
             }
         }
     },

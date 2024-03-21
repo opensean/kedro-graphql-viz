@@ -11,6 +11,7 @@ import { testFile } from './files/test';
 import { compositionFile } from './files/composition';
 import { fixtureFile } from './files/fixture';
 import { graphqlFile } from './files/graphql';
+import { codegenFile } from './files/codegen';
 
 // import { vueDtsFile } from './files/vue-dts';
 
@@ -33,7 +34,7 @@ export type VueComposableCodegenTemplateOptions = {
 
 export class VueComposableCodegenTemplate implements ComponentTemplate {
   constructor(
-    readonly name = 'vue-composable-codgen',
+    readonly name = 'vue-composable-codegen',
     readonly description = 'A vue composable template for graphql codegen. Can be used for Vue composables.',
     readonly hidden = false
   ) {}
@@ -47,7 +48,8 @@ export class VueComposableCodegenTemplate implements ComponentTemplate {
       sampleFile(context),
       testFile(context),
       fixtureFile(context),
-      graphqlFile(context)
+      graphqlFile(context),
+      codegenFile(context)
       // vueDtsFile(context),
     ];
   }
