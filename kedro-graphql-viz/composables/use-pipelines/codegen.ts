@@ -11,11 +11,7 @@ const config: CodegenConfig = {
           'typescript-operations',
           'typescript-vue-apollo',
           'add',
-        ],
-        config: {
-          vueCompositionApiImportFrom: 'vue',
-          content: '/* eslint-disable */\nimport { DocumentNode } from "graphql" // https://github.com/dotansimha/graphql-code-generator/issues/8133 \n/* eslint-enable */'
-        },
+        ]
       },
       './kedro-graphql-viz/composables/use-pipelines/codegen.mock.ts':{
         plugins: [
