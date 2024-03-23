@@ -6,12 +6,12 @@ const config: CodegenConfig = {
     documents: './kedro-graphql-viz/composables/use-pipelines/query.graphql',
     generates: {
       './kedro-graphql-viz/composables/use-pipelines/graphql.ts': {
+        preset: 'client',
         plugins: [
           'typescript',
           'typescript-operations',
           'typescript-vue-apollo',
-          'add',
-        ]
+        ],
       },
       './kedro-graphql-viz/composables/use-pipelines/codegen.mock.ts':{
         plugins: [
