@@ -53,6 +53,8 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@apollo/client": "^3.9.9",
+        "@bitdev/node.node-env": "^1.0.26",
         "@bitdev/vue.dev-services.compiler.vue-compiler": "0.0.5",
         "@bitdev/vue.dev-services.linter.vue-eslint-config": "0.0.4",
         "@bitdev/vue.dev-services.preview.vue-docs-template": "0.0.2",
@@ -60,12 +62,14 @@
         "@bitdev/vue.dev-services.preview.vue-preview": "0.0.6",
         "@bitdev/vue.dev-services.tester.vue-jest-config": "0.0.5",
         "@bitdev/vue.envs.vue-env": "0.0.12",
+        "@bitdev/vue.examples.my-vue-wrapper": "^0.0.11",
         "@bitdev/vue.vue-env": "^0.0.11",
         "@graphql-codegen/cli": "^5.0.2",
         "@graphql-codegen/client-preset": "^4.2.4",
         "@graphql-codegen/typescript-operations": "^4.2.0",
         "@graphql-codegen/typescript-vue-apollo": "^4.1.1",
         "@graphql-typed-document-node/core": "^3.2.0",
+        "@mdi/font": "^7.4.47",
         "@parcel/watcher": "^2.4.1",
         "@teambit/defender.eslint-linter": "1.0.8",
         "@teambit/defender.jest-tester": "1.0.5",
@@ -74,9 +78,12 @@
         "@teambit/envs.docs.env-overview-template": "0.0.2",
         "@teambit/node.node": "^1.0.16",
         "@teambit/typescript.typescript-compiler": "2.0.7",
+        "@vue/apollo-composable": "^4.0.2",
         "@vue/test-utils": "^2.4.4",
+        "cross-fetch": "^4.0.0",
         "graphql": "^16.8.1",
         "graphql-codegen-typescript-mock-data": "^3.7.1",
+        "graphql-tag": "^2.12.6",
         "happy-dom": "^13.8.6",
         "resize-observer-polyfill": "^1.5.1",
         "ts-node": "^10.9.2",
@@ -94,7 +101,8 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "labmesh.kedro-graphql-viz/envs/vuetify-vue-env"
+      "labmesh.kedro-graphql-viz/envs/vuetify-vue-env",
+      "bitdev.node/node-env"
     ]
   }
 }

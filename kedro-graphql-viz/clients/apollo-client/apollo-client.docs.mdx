@@ -1,0 +1,17 @@
+---
+labels: ['ApolloClient', 'module']
+description: 'A module for dynamically creating ApolloClient instances.'
+---
+
+This module provides a function to dynamically create and configure instances of ApolloClient with a custom GraphQL endpoint. It is designed to facilitate the integration of GraphQL APIs into Vue applications, particularly those using the Apollo client library for data fetching and state management.
+
+```ts
+import { provideApolloClient } from '@vue/apollo-composable';
+import { createApolloClient } from '@labmesh/kedro-graphql-viz.clients.apollo-client';
+
+// Create an ApolloClient instance
+const apolloClient = createApolloClient('https://your-graphql-endpoint');
+
+// Provide the ApolloClient instance to your Vue application
+provideApolloClient(apolloClient);
+```

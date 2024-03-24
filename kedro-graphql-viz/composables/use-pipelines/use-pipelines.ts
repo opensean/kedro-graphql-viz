@@ -1,32 +1,23 @@
-import { ref } from "vue";
+import { useUsePipelinesQuery, Scalars } from './graphql';
+import { provideApolloClient } from '@vue/apollo-composable';
+import { createApolloClient } from '@labmesh/kedro-graphql-viz.clients.apollo-client';
 
+export function usePipelines(
+  limit: Number,
+  filter: String,
+  cursor: String, 
+  uri: string = 'http://localhost:5000/graphql/' // Default URI provided
+) {
+  
+  // Create an ApolloClient with the provided URI or the default one
+  const apolloClient = createApolloClient(uri);
+  provideApolloClient(apolloClient);
 
-export interface UseCounterOptions {
-  min?: number;
-  max?: number;
-}
+  const usePipelinesQueryResult = useUsePipelinesQuery({
+    limit: limit,
+    filter: filter,
+    cursor: cursor
+  });
 
-/**
- * Basic counter with utility functions.
- *
- * @see https://vueuse.org/useCounter
- * @param [initialValue=0]
- * @param {Object} options
- */
-export function useCounter(initialValue = 0, options: UseCounterOptions = {}) {
-  const count = ref(initialValue);
-
-  const { max = Infinity, min = -Infinity } = options;
-
-  const inc = (delta = 1) => (count.value = Math.min(max, count.value + delta));
-  const dec = (delta = 1) => (count.value = Math.max(min, count.value - delta));
-  const get = () => count.value;
-  const set = (val: number) =>
-    (count.value = Math.max(min, Math.min(max, val)));
-  const reset = (val = initialValue) => {
-    initialValue = val;
-    return set(val);
-  };
-
-  return { count, inc, dec, get, set, reset };
+  return usePipelinesQueryResult;
 }

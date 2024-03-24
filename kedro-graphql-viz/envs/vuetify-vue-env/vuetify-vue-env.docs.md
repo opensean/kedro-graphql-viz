@@ -19,9 +19,10 @@ import { EnvOverview } from '@teambit/envs.docs.env-overview-template';
           'https://bit.cloud/bitdev/vue/envs/vue-env/~code/config/tsconfig.json',
         ],
       },
-    
-      {name: 'Vitest',
-       configFiles: 'https://bit.cloud/bitdev/vue/envs/vue-env/~code/config/vitest.config.js'}
+      {
+       name: 'Vitest',
+       configFiles: 'https://bit.cloud/bitdev/vue/envs/vue-env/~code/config/vitest.config.js'
+      },
       {
         name: 'ESLint',
         configFiles: [

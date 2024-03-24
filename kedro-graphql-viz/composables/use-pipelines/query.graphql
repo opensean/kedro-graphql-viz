@@ -1,8 +1,7 @@
-query UsePipelines($limit: Int!, $filter: [String!], $cursor: String) {
+query UsePipelines($limit: Int!, $filter: String, $cursor: String) {
   pipelines(limit: $limit, cursor:$cursor, filter: $filter) {
     pageMeta {
       nextCursor
-      count
     }
     pipelines {
       id

@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { aPipelines } from './codegen.mock';
+
+const pipelines  = aPipelines()
 </script>
 
 <template>
-    <h1>use-pipelines fixture</h1>
+  {{ pipelines }}
 </template>

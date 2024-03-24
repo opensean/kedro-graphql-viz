@@ -9,6 +9,20 @@
  */
 
 {
+    "clients/apollo-client": {
+        "name": "clients/apollo-client",
+        "scope": "",
+        "version": "",
+        "defaultScope": "labmesh.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/clients/apollo-client",
+        "config": {
+            "bitdev.node/node-env@1.0.26": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.node/node-env"
+            }
+        }
+    },
     "composables/use-pipelines": {
         "name": "composables/use-pipelines",
         "scope": "",
