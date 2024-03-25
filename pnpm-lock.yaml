@@ -95,6 +95,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.3)
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vue@3.4.21)
       '@vue/apollo-composable':
         specifier: ^4.0.2
         version: 4.0.2(@apollo/client@3.9.9)(graphql@16.8.1)(typescript@5.4.3)(vue@3.4.21)
@@ -347,6 +350,9 @@ importers:
       '@teambit/typescript.typescript-compiler':
         specifier: 2.0.7
         version: 2.0.7(@teambit/legacy@node_modules+@teambit+legacy)
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vue@3.4.21)
       core-js:
         specifier: ^3.0.0
         version: 3.36.0
@@ -472,7 +478,7 @@ importers:
         version: file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.composables.use-pipelines':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.envs.vuetify-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/vuetify-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@20.11.30)(@types/react@17.0.78)(eslint@8.56.0)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.4.3)
@@ -481,7 +487,7 @@ importers:
         version: file:kedro-graphql-viz/templates/vue-generators(@types/node@20.11.30)(ts-node@10.9.2)
       '@labmesh/kedro-graphql-viz.ui.pipelines-data-table':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.11.30)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
@@ -555,7 +561,7 @@ importers:
         version: file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.composables.use-pipelines':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.envs.vuetify-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/vuetify-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@20.10.4)(@types/react@17.0.78)(eslint@8.56.0)(react-dom@17.0.2)(react@17.0.2)(ts-node@10.9.2)(typescript@5.4.3)
@@ -564,7 +570,7 @@ importers:
         version: file:kedro-graphql-viz/templates/vue-generators(@types/node@20.10.4)(ts-node@10.9.2)
       '@labmesh/kedro-graphql-viz.ui.pipelines-data-table':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       graphql:
         specifier: ^16.8.1
         version: 16.8.1
@@ -605,7 +611,7 @@ importers:
         version: file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.composables.use-pipelines':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.envs.vuetify-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/vuetify-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@20.10.4)(@types/react@17.0.78)(eslint@8.56.0)(react-dom@17.0.2)(react@17.0.2)(ts-node@10.9.2)(typescript@5.4.3)
@@ -614,7 +620,7 @@ importers:
         version: file:kedro-graphql-viz/templates/vue-generators(@types/node@20.10.4)(ts-node@10.9.2)
       '@labmesh/kedro-graphql-viz.ui.pipelines-data-table':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       react:
         specifier: ^16.8.0 || ^17.0.0
         version: 17.0.2
@@ -640,7 +646,7 @@ importers:
         version: file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.composables.use-pipelines':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@labmesh/kedro-graphql-viz.envs.vuetify-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/vuetify-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@20.10.4)(@types/react@17.0.78)(eslint@8.56.0)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.4.3)
@@ -649,7 +655,7 @@ importers:
         version: file:kedro-graphql-viz/templates/vue-generators(@types/node@20.10.4)(ts-node@10.9.2)
       '@labmesh/kedro-graphql-viz.ui.pipelines-data-table':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3)
+        version: file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
@@ -20105,6 +20111,21 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@vitejs/plugin-vue@5.0.4(vue@3.4.21):
+    resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      vite: '*'
+      vue: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.4.21(typescript@5.4.3)
+    dev: false
+
   /@vitest/coverage-v8@1.4.0(vitest@1.2.2):
     resolution: {integrity: sha512-4hDGyH1SvKpgZnIByr9LhGgCEuF9DKM34IBLCC/fVfy24Z3+PZ+Ii9hsVBsHvY1umM1aGPEjceRkzxCfcQ10wg==}
     peerDependencies:
@@ -35740,7 +35761,7 @@ packages:
       - typescript
     dev: false
 
-  file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3):
+  file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3):
     resolution: {directory: kedro-graphql-viz/composables/use-pipelines, type: directory}
     id: file:kedro-graphql-viz/composables/use-pipelines
     name: '@labmesh/kedro-graphql-viz.composables.use-pipelines'
@@ -35749,6 +35770,7 @@ packages:
         optional: true
     dependencies:
       '@graphql-codegen/cli': 5.0.2(@parcel/watcher@2.4.1)(@types/node@20.10.4)(graphql@16.8.1)(typescript@5.4.3)
+      '@labmesh/kedro-graphql-viz.clients.apollo-client': file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@vue/apollo-composable': 4.0.2(@apollo/client@3.9.9)(graphql@16.8.1)(typescript@5.4.3)(vue@3.4.21)
       graphql: 16.8.1
       graphql-tag: 2.12.6(graphql@16.8.1)
@@ -35763,6 +35785,7 @@ packages:
       - '@edge-runtime/vm'
       - '@parcel/watcher'
       - '@types/node'
+      - '@types/react'
       - '@vitest/browser'
       - '@vitest/ui'
       - '@vue/composition-api'
@@ -35771,10 +35794,14 @@ packages:
       - cosmiconfig-toml-loader
       - encoding
       - enquirer
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
       - jsdom
       - lightningcss
       - node-notifier
       - stylus
+      - subscriptions-transport-ws
       - sugarss
       - supports-color
       - terser
@@ -35783,7 +35810,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(ts-node@10.9.2)(typescript@5.4.3):
+  file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3):
     resolution: {directory: kedro-graphql-viz/composables/use-pipelines, type: directory}
     id: file:kedro-graphql-viz/composables/use-pipelines
     name: '@labmesh/kedro-graphql-viz.composables.use-pipelines'
@@ -35792,6 +35819,7 @@ packages:
         optional: true
     dependencies:
       '@graphql-codegen/cli': 5.0.2(@parcel/watcher@2.4.1)(@types/node@20.11.30)(graphql@16.8.1)(typescript@5.4.3)
+      '@labmesh/kedro-graphql-viz.clients.apollo-client': file:kedro-graphql-viz/clients/apollo-client(@types/react@17.0.78)(happy-dom@13.3.8)(jest@29.3.1)(less@4.2.0)(sass@1.71.1)(typescript@5.4.3)
       '@vue/apollo-composable': 4.0.2(@apollo/client@3.9.9)(graphql@16.8.1)(typescript@5.4.3)(vue@3.4.21)
       graphql: 16.8.1
       graphql-tag: 2.12.6(graphql@16.8.1)
@@ -35806,6 +35834,7 @@ packages:
       - '@edge-runtime/vm'
       - '@parcel/watcher'
       - '@types/node'
+      - '@types/react'
       - '@vitest/browser'
       - '@vitest/ui'
       - '@vue/composition-api'
@@ -35814,10 +35843,14 @@ packages:
       - cosmiconfig-toml-loader
       - encoding
       - enquirer
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
       - jsdom
       - lightningcss
       - node-notifier
       - stylus
+      - subscriptions-transport-ws
       - sugarss
       - supports-color
       - terser
@@ -35854,6 +35887,7 @@ packages:
       '@teambit/defender.prettier-formatter': 1.0.2(@teambit/legacy@node_modules+@teambit+legacy)
       '@teambit/dependencies.modules.packages-excluder': 1.0.4(react@17.0.2)
       '@teambit/typescript.typescript-compiler': 2.0.7(@teambit/legacy@node_modules+@teambit+legacy)
+      '@vitejs/plugin-vue': 5.0.4(vue@3.4.21)
       core-js: 3.36.0
       graphql: 16.8.1
       happy-dom: 13.3.8
@@ -35905,6 +35939,7 @@ packages:
       - typescript
       - uglify-js
       - utf-8-validate
+      - vite
       - vite-plugin-vuetify
       - vue-i18n
       - vue-template-compiler
@@ -35942,6 +35977,7 @@ packages:
       '@teambit/defender.prettier-formatter': 1.0.2(@teambit/legacy@node_modules+@teambit+legacy)
       '@teambit/dependencies.modules.packages-excluder': 1.0.4(react@18.2.0)
       '@teambit/typescript.typescript-compiler': 2.0.7(@teambit/legacy@node_modules+@teambit+legacy)
+      '@vitejs/plugin-vue': 5.0.4(vue@3.4.21)
       core-js: 3.36.0
       graphql: 16.8.1
       happy-dom: 13.3.8
@@ -35993,6 +36029,7 @@ packages:
       - typescript
       - uglify-js
       - utf-8-validate
+      - vite
       - vite-plugin-vuetify
       - vue-i18n
       - vue-template-compiler
@@ -36030,6 +36067,7 @@ packages:
       '@teambit/defender.prettier-formatter': 1.0.2(@teambit/legacy@node_modules+@teambit+legacy)
       '@teambit/dependencies.modules.packages-excluder': 1.0.4(react@18.2.0)
       '@teambit/typescript.typescript-compiler': 2.0.7(@teambit/legacy@node_modules+@teambit+legacy)
+      '@vitejs/plugin-vue': 5.0.4(vue@3.4.21)
       core-js: 3.36.0
       graphql: 16.8.1
       happy-dom: 13.3.8
@@ -36081,6 +36119,7 @@ packages:
       - typescript
       - uglify-js
       - utf-8-validate
+      - vite
       - vite-plugin-vuetify
       - vue-i18n
       - vue-template-compiler
@@ -36128,7 +36167,7 @@ packages:
       - ts-node
     dev: false
 
-  file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.10.4)(ts-node@10.9.2)(typescript@5.4.3):
+  file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3):
     resolution: {directory: kedro-graphql-viz/ui/pipelines-data-table, type: directory}
     id: file:kedro-graphql-viz/ui/pipelines-data-table
     name: '@labmesh/kedro-graphql-viz.ui.pipelines-data-table'
@@ -36136,6 +36175,7 @@ packages:
       vue:
         optional: true
     dependencies:
+      '@labmesh/kedro-graphql-viz.composables.use-pipelines': file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.10.4)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       graphql: 16.8.1
       happy-dom: 13.3.8
       jest: 29.3.1(@types/node@20.10.4)(ts-node@10.9.2)
@@ -36144,23 +36184,36 @@ packages:
       vitest: 1.2.2(@types/node@20.10.4)(happy-dom@13.3.8)(less@4.2.0)(sass@1.71.1)
       vue: 3.4.21(typescript@5.4.3)
     transitivePeerDependencies:
+      - '@apollo/client'
       - '@edge-runtime/vm'
+      - '@parcel/watcher'
       - '@types/node'
+      - '@types/react'
       - '@vitest/browser'
       - '@vitest/ui'
+      - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
+      - encoding
+      - enquirer
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
       - jsdom
       - lightningcss
       - node-notifier
       - stylus
+      - subscriptions-transport-ws
       - sugarss
       - supports-color
       - terser
       - ts-node
       - typescript
+      - utf-8-validate
     dev: false
 
-  file:kedro-graphql-viz/ui/pipelines-data-table(@types/node@20.11.30)(ts-node@10.9.2)(typescript@5.4.3):
+  file:kedro-graphql-viz/ui/pipelines-data-table(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3):
     resolution: {directory: kedro-graphql-viz/ui/pipelines-data-table, type: directory}
     id: file:kedro-graphql-viz/ui/pipelines-data-table
     name: '@labmesh/kedro-graphql-viz.ui.pipelines-data-table'
@@ -36168,6 +36221,7 @@ packages:
       vue:
         optional: true
     dependencies:
+      '@labmesh/kedro-graphql-viz.composables.use-pipelines': file:kedro-graphql-viz/composables/use-pipelines(@apollo/client@3.9.9)(@parcel/watcher@2.4.1)(@types/node@20.11.30)(@types/react@17.0.78)(ts-node@10.9.2)(typescript@5.4.3)
       graphql: 16.8.1
       happy-dom: 13.3.8
       jest: 29.3.1(@types/node@20.11.30)(ts-node@10.9.2)
@@ -36176,18 +36230,31 @@ packages:
       vitest: 1.2.2(@types/node@20.11.30)(happy-dom@13.3.8)(jsdom@23.2.0)(less@4.2.0)(sass@1.71.1)
       vue: 3.4.21(typescript@5.4.3)
     transitivePeerDependencies:
+      - '@apollo/client'
       - '@edge-runtime/vm'
+      - '@parcel/watcher'
       - '@types/node'
+      - '@types/react'
       - '@vitest/browser'
       - '@vitest/ui'
+      - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
+      - encoding
+      - enquirer
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
       - jsdom
       - lightningcss
       - node-notifier
       - stylus
+      - subscriptions-transport-ws
       - sugarss
       - supports-color
       - terser
       - ts-node
       - typescript
+      - utf-8-validate
     dev: false

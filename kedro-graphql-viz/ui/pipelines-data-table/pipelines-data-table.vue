@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import type { DataCatalog } from "../types"
+  import { ref, toRef } from 'vue'
+  import { Pipeline, usePipelines } from "@labmesh/kedro-graphql-viz.composables.use-pipelines"
 
   const props = defineProps<{
-    modelValue: DataCatalog
+    modelValue: Pipeline
   }>()
 
   const modelValueLocalRef = toRef(props, "modelValue")
@@ -12,7 +12,7 @@
 
   const items = ref([])
   const itemsPerPage = ref(10)
-  const nextCursor = ref(null)
+  const nextCursor = ref('')
   const cursors = ref([null,null])
   const currPage = ref(1)
   const loading = ref(true)
@@ -21,7 +21,7 @@
   const namesFilter = ref([])
   const filters = ref([])
   const filtersOrigin = ref(['name=', 'status=', 'tags['])
-  const searchInput = ref(null)
+  const searchInput = ref('')
   const variables = ref({ limit: itemsPerPage, cursor: nextCursor, filter: searchInput})
   const headers = [
     { title: 'Id', align: 'start', sortable: false, key: 'id' },
@@ -33,7 +33,7 @@
 
  
 
-  const { onResult, onError } = useQuery(pipelinesQuery, variables, {errorPolicy: 'all', notifyOnNetworkStatusChange: true})
+  const { onResult, onError } = usePipelines(itemsPerPage.value, searchInput.value, nextCursor.value) 
 
   onResult(queryResult => {
     console.log(queryResult)
@@ -115,11 +115,11 @@
 
   function updateModelValue (index) {
     //console.log(indexedItems.value[index].dataCatalog)
-    const catalog: DataCatalog = {
-      datasets: indexedItems.value[index].dataCatalog,
-      parameters: indexedItems.value[index].parameters
-    }
-    emit('update:modelValue', catalog)
+    //const catalog: DataCatalog = {
+    //  datasets: indexedItems.value[index].dataCatalog,
+    //  parameters: indexedItems.value[index].parameters
+    //}
+    emit('update:modelValue', indexedItems.value[index])
     
   }
 

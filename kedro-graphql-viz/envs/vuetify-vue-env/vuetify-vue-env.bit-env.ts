@@ -61,7 +61,7 @@ export class VuetifyVueEnv extends VueEnv {
     //});
     return VitestTester.from({
 
-      config: require.resolve('./config/vitest.config.js')
+      config: require.resolve('./config/vitest.config')
 
     });
   }
@@ -133,7 +133,7 @@ export class VuetifyVueEnv extends VueEnv {
       //}),
       VitestTask.from({
 
-        config: require.resolve('./config/vitest.config.js'),
+        config: require.resolve('./config/vitest.config'),
 
       }),
     ]);
