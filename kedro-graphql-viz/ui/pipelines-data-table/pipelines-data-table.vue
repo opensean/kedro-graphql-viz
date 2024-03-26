@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref, toRef } from 'vue'
+  import { ref, toRef, computed } from 'vue'
   import { Pipeline, usePipelines } from "@labmesh/kedro-graphql-viz.composables.use-pipelines"
 
   const props = defineProps<{
@@ -58,10 +58,16 @@
 
   const indexedItems = computed(() => {
     
-    return items.value.map((item, index) => ({
-        index: index,
-        ...item
-      }))
+    if (items.value.length > 0 ) {
+      return items.value.map((item, index) => ({
+          index: index,
+          ...item
+        }))
+    }
+    else {
+      loading.value = false;
+      return []
+    }
   })
 
 
