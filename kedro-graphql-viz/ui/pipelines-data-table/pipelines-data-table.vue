@@ -3,12 +3,12 @@
   import { Pipeline, usePipelines } from "@labmesh/kedro-graphql-viz.composables.use-pipelines"
 
   const props = defineProps<{
-    modelValue: Pipeline
+    pipeline: Pipeline,
   }>()
 
-  const modelValueLocalRef = toRef(props, "modelValue")
+  const modelValueLocalRef = toRef(props, "pipeline")
 
-  const emit = defineEmits(["update:modelValue"])
+  const emit = defineEmits(["update:pipeline"])
 
   const items = ref([])
   const itemsPerPage = ref(10)
@@ -125,7 +125,7 @@
     //  datasets: indexedItems.value[index].dataCatalog,
     //  parameters: indexedItems.value[index].parameters
     //}
-    emit('update:modelValue', indexedItems.value[index])
+    emit('update:pipeline', indexedItems.value[index])
     
   }
 
@@ -154,7 +154,7 @@
           closable-chips
           :items="filters"
           @update:search="updateSearch"
-          @update:modelValue="updateSearchModelValue"
+          @update:pipeline="updateSearchModelValue"
         >
         </v-autocomplete>
         <v-spacer></v-spacer>

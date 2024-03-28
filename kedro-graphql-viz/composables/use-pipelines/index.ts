@@ -1,3 +1,4 @@
 export * from "./use-pipelines";
-export type { Pipeline } from "./graphql";
-export type { aPipelines } from "./codegen.mock";
+export type { Pipeline, Pipelines } from "./graphql";
+import { aPipelines, aPageMeta } from "./codegen.mock";
+export { aPipelines, aPageMeta };

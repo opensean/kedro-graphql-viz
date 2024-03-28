@@ -133,7 +133,7 @@ export class VuetifyVueEnv extends VueEnv {
       //}),
       VitestTask.from({
 
-        config: require.resolve('./config/vitest.config'),
+        config: require.resolve('./config/vitest.config.js'),
 
       }),
     ]);
